@@ -1,0 +1,21 @@
+# IPython log file
+
+ipaddress.ip_address('2001:DB8::1')
+# Fri, 10 Mar 2023 10:32:10
+get_ipython().run_line_magic('logstart', '-ot ipaddress.log')
+# Fri, 10 Mar 2023 10:32:25
+ipaddress.ip_address('192.0.2.1')
+# Fri, 10 Mar 2023 10:32:44
+iPython
+# Fri, 10 Mar 2023 10:33:53
+get_ipython().run_line_magic('pip', 'install iPython')
+# Fri, 10 Mar 2023 10:34:00
+ipaddress.ip_address('192.0.2.1')
+# Fri, 10 Mar 2023 10:34:17
+ipaddress = ()
+# Fri, 10 Mar 2023 10:34:19
+ipaddress.ip_address('192.0.2.1')
+# Fri, 10 Mar 2023 10:34:28
+ipaddress = []
+# Fri, 10 Mar 2023 10:34:29
+ipaddress.ip_address('192.0.2.1')
