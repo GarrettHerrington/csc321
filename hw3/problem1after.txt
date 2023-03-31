@@ -1,0 +1,12 @@
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     36569    
+unix  3      [ ]         STREAM     CONNECTED     36570    
+unix  3      [ ]         STREAM     CONNECTED     36568    
+unix  3      [ ]         STREAM     CONNECTED     36574    
+unix  3      [ ]         STREAM     CONNECTED     36573    
+unix  3      [ ]         STREAM     CONNECTED     36571    
+unix  3      [ ]         STREAM     CONNECTED     36575    
+unix  3      [ ]         STREAM     CONNECTED     36572    

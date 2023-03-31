@@ -1,0 +1,27 @@
+Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)    
+tcp4       0      0  192.168.186.9.54771    35.173.29.32.443       ESTABLISHED
+tcp4       0      0  192.168.186.9.54752    99.86.74.87.443        ESTABLISHED
+tcp4       0      0  192.168.186.9.54587    192.168.186.2.64548    ESTABLISHED
+tcp4       0      0  192.168.186.9.54675    31.13.65.1.443         ESTABLISHED
+tcp4       0      0  192.168.186.9.54664    162.159.133.234.443    ESTABLISHED
+tcp4       0      0  192.168.186.9.54661    31.13.65.36.443        ESTABLISHED
+tcp4       0      0  192.168.186.9.54644    31.13.65.1.443         ESTABLISHED
+tcp4       0      0  192.168.186.9.54631    31.13.65.1.443         ESTABLISHED
+tcp4       0      0  192.168.186.9.54627    54.201.99.205.443      ESTABLISHED
+tcp4       0      0  192.168.186.9.54616    17.57.144.88.5223      ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54588 fe80::aede:48ff:.49159 ESTABLISHED
+tcp4       0      0  192.168.0.12.54462     140.82.114.25.443      ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54392 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54365 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54330 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54303 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54277 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54252 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54222 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54188 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54159 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.54113 fe80::aede:48ff:.49158 ESTABLISHED
+tcp6       0      0  fe80::aede:48ff:.53849 fe80::aede:48ff:.49158 ESTABLISHED
+
+
+I don't see port 5555, i have no idea why
