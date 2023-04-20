@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 Menlo-Regular;\f2\froman\fcharset0 Times-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgray\c0;}
+\margl1440\margr1440\vieww11520\viewh12040\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 This is the beginning of my README.md file, I have no idea what I am doing.\
+\
+Update:  This is a little confusing\
+\
+As I understand this assignment, we essentially are doing work similar to hw3 but this time we are trying to capture the network activity in a .pcap file\
+\
+I am unsure of what the relevant parts are that we are to parse\
+\
+Probably the IP\'92s and the hostnames\
+\
+This assignment is actually kinda huge \
+\
+There is absolutely no information on this assignment or the previous on how to get all this stuff set up in docker and I forgot, gonna have to ask in class, teacher gon be annoyed.\
+\
+Got all the scripts set up right, just have no idea what commands to write in terminal in order to get it all running, tried googling it but there is waaaaay too much to unpack\
+\
+Figured out commands with help from classmates and a little googling, I did try to merge through wireshark but it has this weird problem with merging into .pcap files as well as .erf files, couldnt get it to work\
+\
+used tcpdump -i eth0 -w \'91wuserver.pcap\'92  as well as tcpdump -i eth0 -w \'91wuclient.pcap\'92  to dump the collected packet traffic into the prospective files while running the program\
+\
+Twice I ran the wuserver.py and wuclient.py with tcpdump and when I have tried to merge it, it tells me the file is too large or corrupt\
+\
+Apparently the third time is the charm, now I\'92m going to parse it out based on the port number using \
+\
+files were merged into task-vent.py using \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 mergecap -w weather.pcap wuserver.pcap wuclient.pcap\
+\
+Then parsed into weather.pcap using tcpdump -n -r full-take.pcap port 5556 -w weather.pcap:\
+\
+\
+~~~~~~~~~~~~~~~~~~~~~~~~\outl0\strokewidth0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+\
+\outl0\strokewidth0 \strokec2 \
+Set up tasksink.py, taskvent.py, taskwork.py with each of their prospective tcpdumps into the prospective .pcap files\
+\
+merged all these into task-vent.pcap using \
+\
+
+\f1\fs22 \cf3 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 mergecap -w full-take.pcap taskvent.pcap tasksink.pcap taskwork.pcap\
+\
+finally parsed full-take.pcap by specifying the port with tcpdump\
+
+\f0\fs24 \
+\pard\pardeftab720\sa321\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec2 tcpdump -n -r full-take.pcap port 5557 or port 5558 -w task.pcap
+\f2\b\fs48 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b0\fs24 \cf0 \strokec2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+\
+For the p2p chat bot, I followed The Transworker\'92s online tutorial.  I\'92m not sure why that is his name, I am sure something was lost in translation.\
+\
+Reference source: https://www.youtube.com/watch?v=uNrcbHa9JXg&t=497s&ab_channel=TheTransworker\
+\
+This is an extremely basic p2p chat script that essentially allows you to speak to other people through raw input through the terminal\
+\
+The way he set it up was to do it over the local port 7777, but I am going to try to set it up in docker using node01\
+\
+Somehow my Terminal has decided that it does not want to work anymore, unable to test it correctly\
+}
